@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, BrowserRouter } from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import ScrollToTop from './js/utils/ScrollToTop';
@@ -13,16 +13,15 @@ import App from './App';
 
 import './sass/app.scss';
 
-
 ReactDOM.render(
-    <Provider store={store}>
-      <BrowserRouter>
+  <Provider store={store}>
+    <HashRouter>
       <ScrollToTop />
-        <ReactNotification />
-        <Route>
-          <App />
-        </Route>
-      </BrowserRouter>
-    </Provider>,
+      <ReactNotification />
+      <Route>
+        <App />
+      </Route>
+    </HashRouter>
+  </Provider>,
   document.getElementById('root'),
 );
