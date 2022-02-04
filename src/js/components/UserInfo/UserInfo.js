@@ -44,9 +44,9 @@ const UserInfo = ({ user, onLike, onUnlike, isFavourite }) => {
         onClick={() => (isFavourite ? onUnlike(user.id) : onLike(user))}
       >
         {isFavourite ? (
-          <i class="bi bi-heart-fill text-danger h2"></i>
+          <i className="bi bi-heart-fill text-danger h2"></i>
         ) : (
-          <i class="bi bi-heart h2"></i>
+          <i className="bi bi-heart h2"></i>
         )}
       </button>
 
@@ -85,7 +85,7 @@ const UserInfo = ({ user, onLike, onUnlike, isFavourite }) => {
               <small className="text-muted">
                 Last updated
                 <ReactTimeAgo
-                  date={updated_at}
+                  date={Date.parse(updated_at)}
                   timeStyle="round-minute"
                   locale="en-US"
                   className="ml-1"

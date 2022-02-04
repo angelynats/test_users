@@ -67,7 +67,7 @@ const Header = () => {
                 style={{ padding: '40px' }}
               >
                 <p className="menu-item button_navbar mb-4">
-                  My favourite users <i class="bi bi-heart-fill"></i>
+                  My favourite users <i className="bi bi-heart-fill"></i>
                 </p>
                 {!favouriteUsers.length && (
                   <p className="menu-item text-muted text-center">

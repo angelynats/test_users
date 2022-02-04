@@ -16,7 +16,6 @@ export const fetchUsers = since => dispatch => {
     .get(`/users?since=${since}&per_page=12`)
     .then(response => {
       dispatch(fetchUsersSuccess(response.data));
-      // addNotification();
     })
     .catch(error => {
       dispatch(fetchUsersError(error.response));
@@ -33,7 +32,6 @@ export const fetchUser = id => dispatch => {
   apiInstance
     .get(`/users/${id}`)
     .then(response => {
-      console.log('response', response);
       dispatch(fetchUserSuccess(response.data));
       addNotification({
         type: 'success',
