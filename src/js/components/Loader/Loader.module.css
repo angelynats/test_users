@@ -1,0 +1,25 @@
+.wrapper {
+  /* position: relative; */
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  background-color: transparent;
+  height: 100% !important;
+  width: 100% !important;
+  transition: all 0.5s;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  z-index: 10000;
+}
+
+.loaderDots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin: auto;
+}

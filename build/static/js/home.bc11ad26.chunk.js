@@ -1,0 +1,2 @@
+(this.webpackJsonpswivl=this.webpackJsonpswivl||[]).push([[2],{150:function(e,s,t){"use strict";t.r(s);var c=t(1);t(0);s.default=function(){return Object(c.jsxs)("div",{className:"container pt-4 mt-5",children:[Object(c.jsx)("h1",{className:"h2 text-center mb-4",children:"Welcome!"}),Object(c.jsxs)("h4",{className:" text-center",children:["Smile ",Object(c.jsx)("i",{class:"bi bi-emoji-smile"})]})]})}}}]);
+//# sourceMappingURL=home.bc11ad26.chunk.js.map
